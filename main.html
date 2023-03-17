@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-sm-offset-3">
+        <br/>
+        <br/>
+        <input type="text" id="display" class="form-control" readonly>
+        <button class="btn btn-primary" id="button1" onclick="addToResult('1')">1</button>
+        <button class="btn btn-primary" id="button2" onclick="addToResult('2')">2</button>
+        <button class="btn btn-primary" id="button3" onclick="addToResult('3')">3</button><br/>
+        <button class="btn btn-primary" id="button4" onclick="addToResult('4')">4</button>
+        <button class="btn btn-primary" id="button5" onclick="addToResult('5')">5</button>
+        <button class="btn btn-primary" id="button6" onclick="addToResult('6')">6</button><br/>
+        <button class="btn btn-primary" id="button7" onclick="addToResult('7')">7</button>
+        <button class="btn btn-primary" id="button8" onclick="addToResult('8')">8</button>
+        <button class="btn btn-primary" id="button9" onclick="addToResult('9')">9</button><br/>
+        <button class="btn btn-info" id="buttonPlus" onclick="addToResult('+')">+</button>
+        <button class="btn btn-primary" id="button0" onclick="addToResult('0')">0</button>
+        <button class="btn btn-info" id="buttonMinus" onclick="addToResult('-')">-</button><br/>
+        <button class="btn btn-info" id="buttonTimes" onclick="addToResult('*')">*</button>
+        <button class="btn btn-info" id="buttonDivide" onclick="addToResult('/')">/</button><br/>
+        <button class="btn btn-success" id="buttonEquals" onclick="calculateResult()">=</button>
+        <button class="btn btn-danger" id="buttonClear" onclick="reset()">C</button>
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
